@@ -96,6 +96,7 @@ from .mean import mean, mean_dim
 from .min import min, min_dim
 from .mm import mm, mm_out
 from .multinomial import multinomial
+from .mul import mul, mul_
 from .nansum import nansum, nansum_out
 from .nonzero_static import nonzero_static, nonzero_static_out
 from .ones import ones
@@ -260,6 +261,8 @@ __all__ = [
     "mm",
     "mm_out",
     "multinomial",
+    "mul",
+    "mul_",
     "nansum",
     "nansum_out",
     "native_layer_norm",
