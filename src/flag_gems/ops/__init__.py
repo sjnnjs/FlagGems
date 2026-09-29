@@ -677,6 +677,7 @@ from flag_gems.ops.kaiser_window import (
     kaiser_window_beta,
     kaiser_window_periodic,
 )
+from flag_gems.ops.kl_div import kl_div
 from flag_gems.ops.kron import kron
 from flag_gems.ops.kthvalue import kthvalue
 from flag_gems.ops.l1_loss import l1_loss
@@ -738,6 +739,7 @@ from flag_gems.ops.linalg_matrix_sqrth import (
 )
 from flag_gems.ops.linalg_multi_dot import linalg_multi_dot, linalg_multi_dot_out
 from flag_gems.ops.linalg_norm import linalg_norm
+from flag_gems.ops.linalg_pinv import linalg_pinv
 from flag_gems.ops.linalg_polar import linalg_polar, linalg_polar_out
 from flag_gems.ops.linalg_qr import linalg_qr, linalg_qr_out
 from flag_gems.ops.linalg_slogdet import linalg_slogdet
@@ -1996,6 +1998,7 @@ __all__ = [
     "kaiser_window",
     "kaiser_window_beta",
     "kaiser_window_periodic",
+    "kl_div",
     "kron",
     "kthvalue",
     "l1_loss",
@@ -2070,6 +2073,7 @@ __all__ = [
     "linalg_multi_dot",
     "linalg_multi_dot_out",
     "linalg_norm",
+    "linalg_pinv",
     "linalg_polar",
     "linalg_polar_out",
     "linalg_qr",

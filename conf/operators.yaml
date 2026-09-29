@@ -8388,6 +8388,20 @@ ops:
   - Math
   stages:
   - alpha: '5.5.0'
+- id: kl_div
+  description: |
+    Compute the Kullback-Leibler divergence loss between the input
+    (log-probabilities) and the target, supporting none/mean/sum reductions
+    and both the probability and log-space target interpretations.
+  for:
+  - kl_div
+  labels:
+  - aten
+  - KernelGen
+  kind:
+  - Math
+  stages:
+  - alpha: '5.5.0'
 - id: kron
   description: Computes the Kronecker product of `input` and `other`.
   for:
@@ -9353,6 +9367,17 @@ ops:
   - LinearAlg
   stages:
   - beta: '5.4'
+- id: linalg_pinv
+  description: Computes the Moore-Penrose pseudoinverse of a matrix via Jacobi SVD.
+  for:
+  - linalg_pinv
+  labels:
+  - aten
+  - KernelGen
+  kind:
+  - LinearAlg
+  stages:
+  - alpha: '5.5'
 - id: linalg_polar
   description: Computes the right polar decomposition A = U @ H.
   for:
